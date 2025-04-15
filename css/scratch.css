@@ -1,0 +1,55 @@
+.Navbar{
+    background-color: white;
+    padding: 10px;
+    font-weight: bold;
+
+}
+
+a{
+    text-decoration: none;
+    color:rgb(231, 38, 105);
+}
+
+#Bakingtitle{
+    margin-right: 20px;
+}
+
+body{
+    background-color:rgb(243, 231, 200);
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(123, 63, 0);
+}
+
+.header{
+    font-size: 25px;
+    text-align: center;
+}
+
+.Maintext{
+    text-align: center;
+    font-size: 18px;
+}
+
+ul{
+    display: inline-block;
+    text-align: left;
+}
+
+ol{
+    display: inline-block;
+    text-align: left;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Bakingvideo{
+    text-align: center;
+}
+
+.Footer{
+    text-align: center;
+}

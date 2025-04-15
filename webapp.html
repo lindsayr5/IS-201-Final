@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Future Teller</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #74ebd5, #acb6e5);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 1rem;
+    }
+
+    #prediction {
+      font-size: 1.5rem;
+      margin-top: 1.5rem;
+      color: #222;
+      min-height: 50px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🔮 Discover Your Future 🔮</h1>
+  <button onclick="tellFuture()">Tell Me My Future</button>
+  <div id="prediction"></div>
+
+  <script>
+    const futures = [
+      "You will travel to a new country this year.",
+      "A surprise opportunity is coming your way!",
+      "Someone you haven't seen in years will contact you soon.",
+      "Your hard work will pay off in unexpected ways.",
+      "Love is just around the corner.",
+      "You’ll ace your next big challenge!",
+      "A fortune in disguise will find its way to you.",
+      "New friendships will open new doors.",
+      "Your dream job is closer than you think.",
+      "An adventure awaits—don’t hesitate!"
+    ];
+
+    function tellFuture() {
+      const randomIndex = Math.floor(Math.random() * futures.length);
+      document.getElementById("prediction").innerText = futures[randomIndex];
+    }
+  </script>
+
+</body>
+</html>
